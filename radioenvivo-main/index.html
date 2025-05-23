@@ -10,15 +10,26 @@
 
   <style>
     body {
-      background-image: url('https://i.ibb.co/chv25c9X/Dise-o-sin-t-tulo-3.png');
+      margin: 0;
+      padding: 0;
+      background-image: url('/fondo.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: sans-serif;
     }
 
     h1 {
-      color: #ffffff;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
     }
 
     audio {
@@ -38,7 +49,8 @@
     }
 
     .button:hover {
-      background: #ffff;
+      background: white;
+      color: #1e88e5;
     }
   </style>
 </head>
@@ -46,15 +58,15 @@
   <h1>🎙️ Viva la Radio Online</h1>
 
   <audio controls autoplay>
-    <source src="https://dominicanstream.com/proxy/vivalaradio/;" type="audio/mpeg" />
+    <source src="https://dominicanstream.com/proxy/vivalaradio/;" type="audio/mpeg">
     Tu navegador no soporta el audio.
   </audio>
 
   <div>
-    <a href="https://wa.me/5491133925284" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/5491133925284" target="_blank">
       <button class="button">💬 WhatsApp</button>
     </a>
-    <a href="https://vivalaradioonlinelive.blogspot.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://vivalaradioonlinelive.blogspot.com/" target="_blank">
       <button class="button">🌐 Ver Blog</button>
     </a>
   </div>
