@@ -6,34 +6,63 @@
   <title>Viva la Radio Online</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon-192.png" type="image/png">
-  <meta name="theme-color" content="#1e88e5">
+  <meta name="theme-color" content="#81d4fa"> <!-- Color celeste -->
 
   <style>
     body {
       font-family: sans-serif;
       text-align: center;
-      background: #f4f4f4;
-      padding: 20px;
+      background: #e1f5fe;
+      margin: 0;
+      padding: 10px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     h1 {
-      color: #1e88e5;
+      color: #0277bd;
+      margin-bottom: 10px;
     }
     audio {
       width: 90%;
-      margin-top: 20px;
+      max-width: 400px;
+      margin: 10px auto;
     }
     .button {
-      margin: 10px;
+      margin: 8px;
       padding: 10px 20px;
-      font-size: 18px;
-      background: #1e88e5;
+      font-size: 16px;
+      background: #0288d1;
       color: white;
       border: none;
       border-radius: 10px;
       cursor: pointer;
     }
     .button:hover {
-      background: #1565c0;
+      background: #01579b;
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .floating-whatsapp:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
@@ -43,14 +72,16 @@
     <source src="https://dominicanstream.com/proxy/vivalaradio/;" type="audio/mpeg">
     Tu navegador no soporta el audio.
   </audio>
-  <div>
-    <a href="https://wa.me/5491133925284" target="_blank">
-      <button class="button">💬 WhatsApp</button>
-    </a>
+  <div class="buttons">
     <a href="https://vivalaradioonlinelive.blogspot.com/" target="_blank">
       <button class="button">🌐 Ver Blog</button>
     </a>
   </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5491133925284" class="floating-whatsapp" target="_blank" aria-label="Contacto por WhatsApp">
+    💬
+  </a>
 
   <script src="app.js"></script>
 </body>
